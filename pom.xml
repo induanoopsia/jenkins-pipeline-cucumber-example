@@ -52,16 +52,22 @@
              <version>1.0.6</version>
          </dependency>
         <dependency>
-            <groupId>io-cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>1.2.5</version>
-        </dependency>
+                      <groupId>io.cucumber</groupId>
+                      <artifactId>cucumber-java</artifactId>
+                      <version>7.12.1</version>
+         </dependency>
         <dependency>
-            <groupId>info.cukes</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>1.2.5</version>
-        </dependency>
-
+                      <groupId>info.cukes</groupId>
+                      <artifactId>cucumber-java</artifactId>
+                      <version>1.2.6</version>
+                      <type>pom</type>
+         </dependency>
+         <dependency>
+                      <groupId>io.cucumber</groupId>
+                      <artifactId>cucumber-junit</artifactId>
+                      <version>7.12.1</version>
+                      <scope>test</scope>
+         </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
