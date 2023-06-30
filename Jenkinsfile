@@ -11,14 +11,11 @@ pipeline{
                 }
 
             }
-        }
-    stage ('Test Stage') {
+        stage ('Test Stage') {
             steps {
                     sh 'mvn test'
                 }
             }
-        }
-
 
         stage ('Cucumber Reports') {
 
@@ -26,9 +23,7 @@ pipeline{
                 cucumber buildStatus: "UNSTABLE",
                     fileIncludePattern: "**/cucumber.json",
                     jsonReportDirectory: 'target'
-
-            }
-
+                  }
         }
 
     }
