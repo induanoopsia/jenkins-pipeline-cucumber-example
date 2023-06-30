@@ -7,23 +7,15 @@ pipeline{
         stage ('Compile Stage') {
 
             steps {
-
-                withMaven(maven: 'maven_3_8_7') {
                     sh 'mvn clean install'
-
                 }
 
             }
         }
     stage ('Test Stage') {
-
             steps {
-
-                withMaven(maven: 'maven_3_8_7') {
                     sh 'mvn test'
-
                 }
-
             }
         }
 
