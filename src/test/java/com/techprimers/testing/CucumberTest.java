@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/FizzBuzz.feature",
         glue = "com.techprimers.testing",
-        format = {"json:target/cucumber.json"}
+        plugin = {"json:target/cucumber.json"}
 )
 public class CucumberTest {
 }
